@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Thank God Victor Ita | Tavy419</title>
+
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Segoe UI',sans-serif;
+scroll-behavior:smooth;
+}
+
+body{
+background:linear-gradient(135deg,#0f172a,#1e293b);
+color:white;
+overflow-x:hidden;
+transition:.5s;
+}
+
+body.light{
+background:#f4f4f4;
+color:#111;
+}
+
+nav{
+position:fixed;
+top:0;
+left:0;
+width:100%;
+padding:20px 10%;
+display:flex;
+justify-content:space-between;
+align-items:center;
+background:rgba(255,255,255,.05);
+backdrop-filter:blur(10px);
+z-index:1000;
+}
+
+.logo{
+font-size:30px;
+font-weight:bold;
+color:#38bdf8;
+}
+
+button{
+padding:10px 20px;
+border:none;
+border-radius:30px;
+background:#38bdf8;
+color:white;
+cursor:pointer;
+}
+
+header{
+min-height:100vh;
+display:flex;
+justify-content:center;
+align-items:center;
+text-align:center;
+padding:100px 10%;
+}
+
+h1{
+font-size:65px;
+}
+
+h2{
+color:#38bdf8;
+margin:10px 0;
+}
+
+p{
+font-size:18px;
+line-height:1.8;
+}
+
+section{
+padding:90px 10%;
+}
+
+.title{
+font-size:40px;
+text-align:center;
+margin-bottom:40px;
+color:#38bdf8;
+}
+
+.cards{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:25px;
+}
+
+.card{
+padding:30px;
+border-radius:25px;
+background:rgba(255,255,255,.08);
+backdrop-filter:blur(15px);
+transition:.5s;
+}
+
+.card:hover{
+transform:translateY(-10px);
+box-shadow:0 0 25px #38bdf8;
+}
+
+.progress{
+width:100%;
+height:20px;
+background:#222;
+border-radius:20px;
+overflow:hidden;
+}
+
+.bar{
+height:100%;
+background:#38bdf8;
+}
+
+footer{
+padding:40px;
+text-align:center;
+background:#08111f;
+}
+
+.hearts{
+position:fixed;
+width:100%;
+height:100%;
+pointer-events:none;
+overflow:hidden;
+}
+
+.heart{
+position:absolute;
+color:pink;
+animation:float 10s linear infinite;
+}
+
+@keyframes float{
+0%{
+transform:translateY(100vh);
+opacity:1;
+}
+100%{
+transform:translateY(-100vh);
+opacity:0;
+}
+}
+
+.rain{
+position:fixed;
+top:0;
+left:0;
+width:100%;
+height:100%;
+pointer-events:none;
+background-image:linear-gradient(transparent,rgba(255,255,255,.4));
+background-size:3px 60px;
+opacity:.1;
+animation:rain .3s linear infinite;
+}
+
+@keyframes rain{
+100%{
+background-position:0 60px;
+}
+}
+</style>
+</head>
+
+<body>
+
+<div class="rain"></div>
+<div class="hearts"></div>
+
+<nav>
+<div class="logo">Tavy419 😎</div>
+<button onclick="toggleTheme()">🌙 Theme</button>
+</nav>
+
+<header>
+
+<div>
+
+<h3>Hola 👋</h3>
+
+<h1>Thank God Victor Ita</h1>
+
+<h2>Tavy419 😎</h2>
+
+<p>
+A passionate young Nigerian 🇳🇬 from Uyo, Akwa Ibom State.
+I love <span id="typing"></span>
+</p>
+
+<br>
+
+<h2>❤️ "Dreams Never Die." ❤️</h2>
+
+<br>
+
+<h2 id="age"></h2>
+
+</div>
+
+</header>
+
+<section>
+<h1 class="title">About Me</h1>
+
+<div class="cards">
+
+<div class="card">
+<h2>🎂 Birthday</h2>
+<p>14 August 2009</p>
+</div>
+
+<div class="card">
+<h2>🇳🇬 Country</h2>
+<p>Nigeria</p>
+</div>
+
+<div class="card">
+<h2>📍 State</h2>
+<p>Akwa Ibom State</p>
+</div>
+
+<div class="card">
+<h2>🏙 LGA</h2>
+<p>Uyo</p>
+</div>
+
+<div class="card">
+<h2>❤️ Hobbies</h2>
+<p>Love, Football, Playing Games and Reading</p>
+</div>
+
+</div>
+</section>
+
+<section>
+
+<h1 class="title">Football Passion ⚽</h1>
+
+<div class="cards">
+
+<div class="card">
+<h2>🐐 Favorite Player</h2>
+<p>Lionel Messi 🇦🇷</p>
+</div>
+
+<div class="card">
+<h2>🔴 Favorite Club</h2>
+<p>Liverpool FC ❤️</p>
+</div>
+
+</div>
+
+</section>
+
+<section>
+
+<h1 class="title">Skills 📊</h1>
+
+<div class="card">
+
+Football ⚽
+<div class="progress">
+<div class="bar" style="width:90%"></div>
+</div>
+
+<br>
+
+Gaming 🎮
+<div class="progress">
+<div class="bar" style="width:95%"></div>
+</div>
+
+<br>
+
+Reading 📚
+<div class="progress">
+<div class="bar" style="width:80%"></div>
+</div>
+
+<br>
+
+Coding 💻
+<div class="progress">
+<div class="bar" style="width:70%"></div>
+</div>
+
+</div>
+
+</section>
+
+<section>
+
+<h1 class="title">⏳ Time Since 14 August 2009</h1>
+
+<div class="card">
+
+<h2 id="lifeCounter"></h2>
+
+</div>
+
+</section>
+
+<section>
+
+<h1 class="title">Contact Me 📞</h1>
+
+<div class="cards">
+
+<div class="card">
+<h2>📧 Gmail</h2>
+<p>thankita419@gmail.com</p>
+</div>
+
+<div class="card">
+<h2>📞 Phone</h2>
+<p>+2349120824574</p>
+</div>
+
+</div>
+
+</section>
+
+<footer>
+
+<h2>Thank God Victor Ita</h2>
+
+<h3>Tavy419 😎</h3>
+
+<p>📍 Uyo, Akwa Ibom State, Nigeria 🇳🇬</p>
+
+<p>📧 thankita419@gmail.com</p>
+
+<p>📞 +2349120824574</p>
+
+<br>
+
+<h3>❤️ Dreams Never Die ❤️</h3>
+
+</footer>
+
+<script>
+
+alert("Hola 👋 Welcome to the official portfolio of Thank God Victor Ita!");
+
+function toggleTheme(){
+document.body.classList.toggle("light");
+}
+
+const hobbies=["Love ❤️","Football ⚽","Playing Games 🎮","Reading 📚"];
+
+let i=0;
+let j=0;
+let deleting=false;
+
+function type(){
+
+let word=hobbies[i];
+
+document.getElementById("typing").innerHTML=
+word.substring(0,j);
+
+if(!deleting){
+j++;
+}
+else{
+j--;
+}
+
+if(j>word.length){
+deleting=true;
+}
+
+if(j<0){
+deleting=false;
+i++;
+
+if(i===hobbies.length){
+i=0;
+}
+}
+
+setTimeout(type,120);
+
+}
+
+type();
+
+function updateLifeCounter(){
+
+let birthDate=new Date("2009-08-14T00:00:00");
+let now=new Date();
+
+let diff=now-birthDate;
+
+let seconds=Math.floor(diff/1000);
+let minutes=Math.floor(seconds/60);
+let hours=Math.floor(minutes/60);
+let days=Math.floor(hours/24);
+let years=Math.floor(days/365.25);
+
+document.getElementById("age").innerHTML=
+"🎂 Age: "+years+" years old";
+
+document.getElementById("lifeCounter").innerHTML=
+years+" Years<br>"+
+days.toLocaleString()+" Days<br>"+
+hours.toLocaleString()+" Hours<br>"+
+minutes.toLocaleString()+" Minutes<br>"+
+seconds.toLocaleString()+" Seconds";
+
+}
+
+setInterval(updateLifeCounter,1000);
+
+function createHeart(){
+
+let heart=document.createElement("div");
+
+heart.classList.add("heart");
+
+heart.innerHTML="❤️";
+
+heart.style.left=Math.random()*100+"vw";
+
+heart.style.fontSize=Math.random()*20+10+"px";
+
+document.querySelector(".hearts").appendChild(heart);
+
+setTimeout(()=>{
+heart.remove();
+},10000);
+
+}
+
+setInterval(createHeart,500);
+
+</script>
+
+</body>
+</html>
